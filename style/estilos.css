@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&family=Roboto:ital,wght@1,300&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: rgba(35, 87, 57, 0.835);
+    display: flex;
+    flex-direction: column;
+    grid-area: body;
+}
+
+ul li{
+    list-style-type: none;
+    display: inline-block;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-family: 'Roboto', sans-serif;
+}
+
+p{
+    font-family: 'Roboto', sans-serif;
+    text-align: left;
+} 
+
+
+
+header{
+    background-color: rgb(0, 0, 0);
+    padding: 5px;
+    padding-top: 20px;
+    border-style: double;
+    border-color: rgb(248, 248, 248);
+    position: sticky;
+    top: 1px;
+    grid-area: header;
+}
+
+footer{
+    background-color: rgb(0, 0, 0);
+    border-style: double;
+    border-color: rgb(248, 248, 248);
+    grid-area: footer;
+}
+
+h1{
+    font-family: 'Roboto', sans-serif;
+}
+
+h2{
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.tituloinicio{
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+.quienessomos{
+    text-align: center;
+    padding: 15px;
+}
+
+main{
+    text-align: center;
+    grid-area: main;
+}
+
+.sectioninicio{
+    text-align: center;
+}
+
+.logo{
+    padding: 15px;
+}
+
+.vistazo{
+    padding: 15px;
+}
+
+.fotologo{
+    border-style: groove;
+    border-radius: 10px;
+    border-color: azure;
+    transition: all 2s;
+}
+
+.fotologo:hover{
+    transform: rotate(360deg);
+}
+
+.matestanley{
+    padding: 20px;
+}
+
+.ofrecemos{
+    padding: 15px;
+}
+
+.somos{
+    padding: 20px;
+}
+
+.proximamente{
+    padding: 25px;
+}
+
+.detallesproducto{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    border-style: groove;
+    justify-content: center;
+    font-size:large;
+    font-weight: bolder;
+}
+
+.matesirviendo{
+    width: 500px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.imagenesproducto{
+    margin: 20px;
+    display: grid;
+    grid-template-areas:"clasico legendary" ;
+    grid-template-columns: 25% 25%;
+    text-align: center;
+    justify-content: center;
+    font-size: larger;
+    font-weight: bolder;
+    color: aliceblue ;
+
+}
+
+.clasico{
+    grid-area: clasico;
+    border-radius: 10%;
+    border-style:groove;
+    border-color: black;
+}
+
+.legendary{
+    grid-area: legendary;
+    border-radius: 10%;
+    border-style:groove;
+    border-color: black;
+}
+
+.precio{
+    text-align: center;
+    margin: 20px;
+}
+
+.precio2{
+    text-align: center;
+    margin: 20px;
+}
+
+.sectioninicio{
+    grid-area: sectioninicio;
+}
+
+.body{
+    background-color: rgba(35, 87, 57, 0.835);
+    display: flex;
+    flex-direction: column;
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "main"
+    "sectioninicio"
+    "footer";
+}
+
+@media (min-width: 500px){
+    .body{
+        background-color: rgba(35, 87, 57, 0.835);
+        display: flex;
+        flex-direction: column;
+        display: grid;
+        grid-template-areas: 
+        "header header"
+        "main main"
+        "sectioninicio sectioninicio"
+        "footer footer";
+    }
+    
+}
+
+@media (min-width: 768px){
+    .body{
+        background-color: rgba(35, 87, 57, 0.835);
+        display: flex;
+        flex-direction: column;
+        display: grid;
+        grid-template-areas: 
+        "header"
+        "main"
+        "sectioninicio"
+        "footer";
+    }
+}
+
+@media (min-width: 1024px){
+.body{
+    background-color: rgba(35, 87, 57, 0.835);
+    display: flex;
+    flex-direction: column;
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "main"
+    "sectioninicio"
+    "footer";
+    }
+}
